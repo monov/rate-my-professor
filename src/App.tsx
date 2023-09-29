@@ -13,7 +13,7 @@ function App() {
       <NavBar />
       <div className="meet-page">
         <div className="search-bar-container">
-          <div className="txt_wrapper">
+          <div className="txt-wrapper">
             <h1>Welcome to Rate My Prefessor</h1>
             <p>Please type the Name of the Professor you are looking for!</p>
           </div>
