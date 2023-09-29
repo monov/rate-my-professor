@@ -8,12 +8,13 @@ export interface SearchResultProps {
 }
 
 const SearchResult: React.FC<SearchResultProps> = ({ result }) => {
+  const handleClick = () => {
+    alert(`sent request to https://uni-hub/${result.name.toLowerCase().replace(/ /g, '')}`);
+  };
   return (
     <div
-      className="search-result"
-      onClick={() => {
-        alert(`sent request to https://uni-hub/${result.name.toLowerCase().replace(/ /g, '')}`)
-      }}
+      className={`search-result`}
+      onClick={handleClick}
     >
       {result.name}
     </div>

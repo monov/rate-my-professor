@@ -7,6 +7,7 @@
     display: flex;
     padding: 0 15px;
     align-items: center;
+    margin-top: 1rem;
 }
 
 input{
@@ -18,9 +19,10 @@ input{
     margin-left: 1rem;
 }
 
-input:focus {
+input:focus { 
     outline: none;
 }
+
 
 #search-icon {
     color: #AB162B;

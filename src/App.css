@@ -1,15 +1,46 @@
 .App {
     background-color: #eee;
-    height: 100vh;
     width: 100%;
-}
-
-.search-bar-container {
-    padding-top: 20vh;
-    width: 40%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 200px;
 }
+
+.search-bar-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 350px;
+    margin-top: 14rem;
+}
+
+.meet-page{
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: #AB162B;
+}
+
+p{
+    margin-top: 0.5rem;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #921324;
+}
+  
+::-webkit-scrollbar-track{
+    background: #eee;
+}
+

@@ -1,0 +1,60 @@
+.navbar-wrapper {
+    width: 100%;
+    height: 60px;
+    background: #AB162B;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo{
+    font-size: 34px;
+    display: flex;
+    margin: 0 0 0 2rem;
+    font-family: 'FontLogo';
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.reg{
+    height: 100%;
+    flex: 1;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.signup{
+    cursor: pointer;
+    height: 100%;
+    width: 8rem;
+    line-height: 60px;
+    text-align: center;
+    transition: .2s;
+    text-decoration: none;
+    color: white;
+}
+
+.login{
+    cursor: pointer;
+    height: 100%;
+    width: 8rem;
+    line-height: 60px;
+    text-align: center;
+    transition: .2s;
+    text-decoration: none;
+    color: white;
+}
+
+.login:hover, .signup:hover{
+    background: #911324;
+}
+
+
+@font-face {
+    font-family: 'FontLogo';
+    src: local('FontLogo'),
+         url('../assets/fonts/GoldleafBoldPersonalUseBold-eZ4dO.ttf') format('truetype');
+}

@@ -6,15 +6,16 @@ export interface SearchResultsListProps {
   results: any[];
 }
 
-const SearchResultsList: React.FC<SearchResultsListProps> = ({results}) => {
+const SearchResultsList: React.FC<SearchResultsListProps> = ({
+  results,
+  
+}) => {
   return (
-    <div className="results-list">
-      {
-        results.map((result, id) =>{
-            return <SearchResult result={result} key={id}/>
-        })
-      }
-    </div>
+      <div className="results-list">
+        {results.map((result, id) => {
+          return <SearchResult result={result} key={id} />;
+        })}
+      </div>
   );
 };
 

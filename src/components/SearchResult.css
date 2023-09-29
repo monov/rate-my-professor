@@ -1,6 +1,6 @@
 .search-result{
     padding: 10px 20px;
-    transition: .2s;
+    transition: ease .2s;
     cursor: pointer;
 }
 

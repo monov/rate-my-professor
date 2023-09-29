@@ -27,7 +27,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ setResults }) => {
 
   const handleChange = (value: string) => {
     setInput(value);
-    fetchData(value);
+    fetchData(value.toLocaleLowerCase());
   };
 
   return (

@@ -8,4 +8,17 @@
     margin-top: 1rem;
     max-height: 300px;
     overflow-y: auto;
+    transition: .5s;
+    scroll-behavior: smooth;
 }
+
+
+.results-list::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.results-list::-webkit-scrollbar-thumb {
+    background: #AB162B;
+    border-radius: 10px;
+}
+  
