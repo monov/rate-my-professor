@@ -8,6 +8,7 @@ export interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({ setResults }) => {
   const [input, setInput] = useState("");
+  const [isTyped, setIsTyped] = useState(false);
 
   const fetchData = (value: string) => {
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -28,10 +29,17 @@ const SearchBar: React.FC<SearchBarProps> = ({ setResults }) => {
   const handleChange = (value: string) => {
     setInput(value);
     fetchData(value.toLocaleLowerCase());
+    if(value == '') {
+      setIsTyped(false)
+      console.log(isTyped)
+    }else {
+      setIsTyped(true)
+      console.log(isTyped)
+    }
   };
 
   return (
-    <div className="input-wrapper">
+    <div className={isTyped ? "typed": "input-wrapper"}>
       <FaSearch id="search-icon" />
       <input
         placeholder="Type to search..."

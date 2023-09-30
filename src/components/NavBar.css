@@ -1,33 +1,23 @@
 .navbar-wrapper {
     width: 98%;
     height: 60px;
-    background: #AB162B;
     display: flex;
     align-items: center;
     color: white;
     border-radius: 10px;
     margin-top: 0.5rem;
     overflow: hidden;
-    position: fixed;
     transition: .4s;
-    box-shadow: 0 0 8px #1f1f1f;
-}
-
-.scroll {
-    width: 100%;
-    border-radius: 0;
-    margin-top: 0;
-    box-shadow: none;
 }
 
 .logo{
-    font-size: 34px;
-    display: flex;
     margin: 0 0 0 2rem;
-    /* font-family: 'FontLogo'; */
+    background: url('../assets/imgs/logo.png') no-repeat;
     cursor: pointer;
-    color: white;
-    text-decoration: none;
+    height: 60px;
+    width: 160px;
+    background-size: contain;
+    background-position: center;
 }
 
 .reg{
@@ -41,33 +31,47 @@
 
 .signup{
     cursor: pointer;
-    height: 100%;
-    width: 8rem;
-    line-height: 60px;
+    height: 100%px;
+    width: 7rem;
+    line-height: 40px;
     text-align: center;
     transition: .2s;
     text-decoration: none;
     color: white;
+    background: #AB162B;
+    border-radius: 20px;
+    margin-right: 2rem;
 }
 
 .login{
     cursor: pointer;
     height: 100%;
-    width: 8rem;
+    width: 7rem;
     line-height: 60px;
     text-align: center;
     transition: .2s;
     text-decoration: none;
-    color: white;
+    color: #AB162B;
 }
 
-.login:hover, .signup:hover{
-    background: #911324;
+.login:hover{
+    text-decoration: underline;
+} 
+
+.signup:hover {
+    background: #921324;
 }
+
 
 
 @font-face {
     font-family: 'FontLogo';
     src: local('FontLogo'),
          url('../assets/fonts/GoldleafBoldPersonalUseBold-eZ4dO.ttf') format('truetype');
+}
+
+@media ( width <= 450px) {
+    .login, .signup {
+        display: none;
+    }
 }

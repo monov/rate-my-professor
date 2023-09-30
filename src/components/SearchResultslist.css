@@ -1,15 +1,16 @@
 .results-list{
-    width: 100%;
+    width: 40%;
     background: white;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 8px #ddd;
-    border-radius: 10px;
-    margin-top: 1rem;
+    border-radius: 0 0 10px 10px;
     max-height: 300px;
+    min-width: 350px;
     overflow-y: auto;
     transition: .5s;
     scroll-behavior: smooth;
+    flex-shrink: 0;
+    box-shadow: 0px 9px 8px #1f1f1f;
 }
 
 
@@ -20,5 +21,9 @@
 .results-list::-webkit-scrollbar-thumb {
     background: #AB162B;
     border-radius: 10px;
+}
+
+.results-list::-webkit-scrollbar-track {
+    background: transparent;
 }
   

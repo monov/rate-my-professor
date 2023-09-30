@@ -3,12 +3,26 @@
     width: 100%;
     border-radius: 10px;
     height: 2.5rem;
-    box-shadow: 0 0 8px #ddd;
+    box-shadow: 0 0px 8px #1f1f1f;
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    margin-top: 1rem;
+    transition: .5s;
+}
+
+.typed {
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    height: 2.5rem;
+    border-radius: 10px 10px 0 0;
     display: flex;
     padding: 0 15px;
     align-items: center;
     margin-top: 1rem;
 }
+
 
 input{
     background: transparent;
@@ -17,12 +31,8 @@ input{
     font-size: 1.25rem;
     width: 100%;
     margin-left: 1rem;
-}
-
-input:focus { 
     outline: none;
 }
-
 
 #search-icon {
     color: #AB162B;

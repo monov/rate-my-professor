@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <div className="infop"></div>
       <div className="meet-page">
         <div className="search-bar-container">
           <div className="txt-wrapper">
@@ -18,9 +19,10 @@ function App() {
             <p>Please type the Name of the Professor you are looking for!</p>
           </div>
           <SearchBar setResults={setResults} />
-          <SearchResultsList results={results} />
         </div>
+        <SearchResultsList results={results} />
       </div>
+      <div className="infop"></div>
       <Footer />
     </div>
   );

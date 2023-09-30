@@ -6,42 +6,56 @@
     align-items: center;
 }
 
+.meet-page{
+    height: 60vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    overflow: visible;
+    background: linear-gradient(0deg, rgba(21, 21, 21, 0.7), rgba(21, 21, 21, 0.7)), url('./assets/imgs/man-reading-book.ec0041cf.jpeg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
 .search-bar-container {
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 350px;
-    margin-top: 18rem;
-}
-
-.meet-page{
-    height: 120vh;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    margin-top: calc(30vh - 172.8px / 2);
 }
 
 h1{
-    color: #AB162B;
+    color: white;
 }
 
 p{
     margin-top: 0.5rem;
+    color: white;
 }
 
 .txt-wrapper {
-    background: white;
+    background: transparent;
+    backdrop-filter: blur(20px);
     width: 100%;
-    min-height: 100px;
+    min-height: 140px;
     border-radius: 10px;
-    box-shadow:  0 0 8px #ddd;
+    box-shadow:  0 0 8px #1f1f1f;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.infop{
+    width: 100%;
+    height: 20vh;
+}
 
 ::-webkit-scrollbar {
     width: 10px;

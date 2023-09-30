@@ -18,8 +18,8 @@ const NavBar = () => {
 
   return (
     <div className={isScroll ? "navbar-wrapper scroll" : "navbar-wrapper"}>
-      <a href="" className="logo">
-        UniHub
+      <a href="">
+        <div className="logo"></div>
       </a>
 
       <div className="reg">
