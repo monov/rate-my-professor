@@ -1,4 +1,3 @@
-import React from "react";
 import "./NavBar.css";
 import { useState } from "react";
 import "../assets/fonts/GoldleafBoldPersonalUseBold-eZ4dO.ttf";
