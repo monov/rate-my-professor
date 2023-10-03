@@ -1,5 +1,4 @@
 import "./NavBar.css";
-import { useState } from "react";
 import "../assets/fonts/GoldleafBoldPersonalUseBold-eZ4dO.ttf";
 import { Link} from "react-router-dom";
 
