@@ -39,7 +39,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ setResults }) => {
   };
 
   return (
-    <div className={isTyped ? "typed": "input-wrapper"}>
+    <div className="input-wrapper">
       <FaSearch id="search-icon" />
       <input
         placeholder="Type to search..."

@@ -1,5 +1,5 @@
-.App {
-    background-color: #eee;
+.Home {
+    background-color: white;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
 
 .meet-page{
     height: 60vh;
-    width: 100%;
+    width: 98%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -20,6 +20,7 @@
     background-position: center;
     background-size: cover;
     border-radius: 20px;
+    box-shadow: 0 0 8px #1f1f1f;
 }
 
 .search-bar-container {

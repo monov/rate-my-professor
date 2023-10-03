@@ -14,11 +14,14 @@
     margin: 0 0 0 2rem;
     background: url('../assets/imgs/logo.png') no-repeat;
     cursor: pointer;
-    height: 60px;
-    width: 160px;
+    height: 50px;
+    width: 170px;
     background-size: contain;
     background-position: center;
+    border-radius: 10px;
+    transition: .2s;
 }
+
 
 .reg{
     height: 100%;
@@ -31,7 +34,6 @@
 
 .signup{
     cursor: pointer;
-    height: 100%px;
     width: 7rem;
     line-height: 40px;
     text-align: center;
@@ -45,17 +47,21 @@
 
 .login{
     cursor: pointer;
-    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    transition: .2s;
     width: 7rem;
-    line-height: 60px;
     text-align: center;
     transition: .2s;
     text-decoration: none;
+    border-radius: 20px;
+    margin-right: 1rem;
     color: #AB162B;
 }
 
 .login:hover{
     text-decoration: underline;
+    box-shadow: 0 0 8px #1f1f1f;
 } 
 
 .signup:hover {

@@ -2,6 +2,7 @@
     padding: 10px 20px;
     transition: ease .2s;
     cursor: pointer;
+    text-align: start;
 }
 
 .search-result:hover {
