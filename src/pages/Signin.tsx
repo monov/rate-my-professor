@@ -72,9 +72,9 @@ const Signin = () => {
               placeholder="password"
             />
           </div>
-          <Link to={'/'} className="s s-button" onClick={login}>
+          <div className="s s-button" onClick={login}>
             Sign In
-          </Link>
+          </div>
         </div>
       </div>
       <Footer />
