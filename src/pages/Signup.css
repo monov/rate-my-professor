@@ -1,0 +1,75 @@
+.App-signup{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('https://www.hdnicewallpapers.com/Walls/Big/Abstract/White_Texture_Pattern_Abstract_4K_Wallpaper.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.signup-page-wrapper{
+    margin-top: 8rem;
+    background: transparent;
+    box-shadow: 0 0 8px;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(50px);
+}
+
+.signup-reg{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s{
+    background: white; 
+    border: none;
+    height: 60px;
+    font-size: 1.25rem;
+    width: 40%;
+    min-width: 250px;
+    max-width: 350px;
+    margin-top: 1rem;
+    outline: none;
+    border-radius: 10px;
+}
+
+.s:nth-child(1) {
+    margin-top: 0;
+}
+
+.s-button{
+    background: #921324;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+@media (height <= 740px) {
+    .App-signup{
+        height: 115vh;
+    }
+
+    .signup-page-wrapper{
+        margin-top: 2.5rem;
+    }
+}
+
+@media (height <= 1500px) {
+    .signup-page-wrapper{
+        margin-top: 2.5rem;
+    }
+}

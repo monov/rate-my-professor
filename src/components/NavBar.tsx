@@ -7,9 +7,9 @@ const NavBar = () => {
 
   return (
     <div className="navbar-wrapper">
-      <a href="">
+      <Link to="/">
         <div className="logo"></div>
-      </a>
+      </Link>
 
       <div className="reg">
         <Link to='/signup' className="login">
