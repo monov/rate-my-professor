@@ -2,12 +2,13 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import "./Signup.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
-
+  let navigate = useNavigate();
   const handleChangeU = (value: string) => {
     setUser(value);
   };
@@ -31,10 +32,11 @@ const Signup = () => {
       password: signupPassword,
     };
 
-    fetch("/signup", {
+    fetch("https://8a70-185-192-69-121.ngrok-free.app/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "Key": "123",
       },
       body: JSON.stringify(signupData),
     })
@@ -42,6 +44,8 @@ const Signup = () => {
       .then((data) => {
         if (data.success) {
           alert("Signup successful");
+          let path = `/signin`;
+          navigate(path);
         } else {
           alert("Signup failed. Please try again.");
         }

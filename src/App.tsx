@@ -4,7 +4,6 @@ import Signup from "./pages/Signup";
 import Home from "./pages/Home";
 import Signin from "./pages/Signin";
 
-
 function App() {
   
 

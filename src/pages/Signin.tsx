@@ -1,19 +1,20 @@
 import { useState } from "react";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import { useNavigate } from "react-router-dom";
 
 const Signin = () => {
+  let navigate = useNavigate();
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
+  const api = "https://8a70-185-192-69-121.ngrok-free.app/login";
 
   const handleChangeU = (value: string) => {
     setUser(value);
-    console.log(value);
   };
 
   const handleChangeP = (value: string) => {
     setPassword(value);
-    console.log(value);
   };
 
   async function login() {
@@ -26,19 +27,18 @@ const Signin = () => {
     };
 
     try {
-      const response = await fetch(
-        "https://6ead-82-215-127-95.ngrok-free.app/login",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(loginData),
-        }
-      );
+      const response = await fetch(api, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Key": "123",
+        },
+        body: JSON.stringify(loginData),
+      });
 
       if (response.status === 200) {
-        console.log("success");
+        let path = `/`;
+        navigate(path);
       } else if (response.status === 401) {
         alert("Login failed. Please check your credentials.");
       } else {
