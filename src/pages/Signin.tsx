@@ -20,29 +20,28 @@ const Signin = () => {
     const loginUsername = user;
     const loginPassword = password;
 
-    // Create an object to send as the request body
     const loginData = {
       username: loginUsername,
       password: loginPassword,
     };
 
     try {
-      const response = await fetch("https://6ead-82-215-127-95.ngrok-free.app/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(loginData),
-      });
+      const response = await fetch(
+        "https://6ead-82-215-127-95.ngrok-free.app/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(loginData),
+        }
+      );
 
       if (response.status === 200) {
-        // Redirect to '/profile' if authentication succeeds
-        console.log("success")
+        console.log("success");
       } else if (response.status === 401) {
-        // Display an error message if authentication fails
         alert("Login failed. Please check your credentials.");
       } else {
-        // Handle other status codes or errors
         console.error("Login error:", response.statusText);
       }
     } catch (error) {
