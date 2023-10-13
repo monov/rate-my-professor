@@ -9,6 +9,7 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   let navigate = useNavigate();
+  const api: any = import.meta.env.VITE_API_BASE_URL;
   const handleChangeU = (value: string) => {
     setUser(value);
   };
@@ -32,11 +33,11 @@ const Signup = () => {
       password: signupPassword,
     };
 
-    fetch("https://8a70-185-192-69-121.ngrok-free.app/signup", {
+    fetch(`${api}signup`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Key": "123",
+        "x-api-key": "123",
       },
       body: JSON.stringify(signupData),
     })

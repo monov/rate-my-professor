@@ -8,21 +8,24 @@ export interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({ setResults }) => {
   const [input, setInput] = useState("");
-  const fetchData = (value: string) => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
-      .then((json: any) => {
-        const results = json.filter((user: any) => {
-          return (
-            value &&
-            user &&
-            user.name &&
-            user.name.toLowerCase().includes(value)
-          );
-        });
-        setResults(results);
+  const api: string = import.meta.env.VITE_API_BASE_URL;
+  const apiKey: string = import.meta.env.VITE_API_KEY
+  async function fetchData(value:any) {
+    try {
+      const response = await fetch(`${api}login`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": apiKey,
+        },
+        body: JSON.stringify(value),
       });
-  };
+      setResults(await response.json());
+
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
 
   const handleChange = (value: string) => {
     setInput(value);

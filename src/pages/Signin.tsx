@@ -7,7 +7,7 @@ const Signin = () => {
   let navigate = useNavigate();
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
-  const api = "https://8a70-185-192-69-121.ngrok-free.app/login";
+  const api: any = import.meta.env.VITE_API_BASE_URL;
 
   const handleChangeU = (value: string) => {
     setUser(value);
@@ -27,11 +27,11 @@ const Signin = () => {
     };
 
     try {
-      const response = await fetch(api, {
+      const response = await fetch(`${api}login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Key": "123",
+          "x-api-key": "123",
         },
         body: JSON.stringify(loginData),
       });
