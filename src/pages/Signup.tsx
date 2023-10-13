@@ -45,7 +45,7 @@ const Signup = () => {
       .then((data) => {
         if (data.success) {
           alert("Signup successful");
-          let path = `/signin`;
+          let path = `/login`;
           navigate(path);
         } else {
           alert("Signup failed. Please try again.");
