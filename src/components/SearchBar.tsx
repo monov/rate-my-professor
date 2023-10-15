@@ -9,8 +9,8 @@ export interface SearchBarProps {
 const SearchBar: React.FC<SearchBarProps> = ({ setResults }) => {
   const [input, setInput] = useState("");
   const api: string = import.meta.env.VITE_API_BASE_URL;
-  const apiKey: string = import.meta.env.VITE_API_KEY
-  async function fetchData(value:any) {
+  const apiKey: string = import.meta.env.VITE_API_KEY;
+  async function fetchData(value: any) {
     try {
       const response = await fetch(`${api}login`, {
         method: "POST",
@@ -21,7 +21,6 @@ const SearchBar: React.FC<SearchBarProps> = ({ setResults }) => {
         body: JSON.stringify(value),
       });
       setResults(await response.json());
-
     } catch (error) {
       console.error("Error:", error);
     }

@@ -1,10 +1,17 @@
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import Emailconf from "../components/Emailconf";
 import "./Signup.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Signup = () => {
+interface buttonProps {
+  setIsPressed: React.Dispatch<React.SetStateAction<boolean>>;
+  isPressed: boolean;
+}
+
+
+const Signup: React.FC<buttonProps> = ({setIsPressed, isPressed}) => {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -23,6 +30,8 @@ const Signup = () => {
   };
 
   function signup() {
+    setIsPressed(true)
+    
     const signupEmail = email;
     const signupUsername = user;
     const signupPassword = password;
@@ -59,6 +68,7 @@ const Signup = () => {
   return (
     <div className="App-signup">
       <NavBar />
+      <Emailconf isPressed={isPressed}/>
       <div className="signup-reg">
         <div className="signup-page-wrapper">
           <div className="s email">
