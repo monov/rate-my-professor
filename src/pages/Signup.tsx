@@ -68,7 +68,7 @@ const Signup: React.FC<buttonProps> = ({setIsPressed, isPressed}) => {
   return (
     <div className="App-signup">
       <NavBar />
-      <Emailconf isPressed={isPressed}/>
+      <Emailconf isPressed={isPressed} setIsPressed={setIsPressed}/>
       <div className="signup-reg">
         <div className="signup-page-wrapper">
           <div className="s email">

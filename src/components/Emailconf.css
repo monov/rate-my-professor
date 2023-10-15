@@ -11,6 +11,7 @@
     justify-content: center;
     box-shadow: 0 0 8px #1f1f1f;
     transform: translateY(26.5%);
+    border-radius: 10px;
 }
 
 .emailconf-wrappernot{
@@ -18,12 +19,14 @@
 }
 
 .email-input{
-    border: solid 2px #921324;
+    border-radius: 20px;
+    border: solid 2px var(--main-color);
     width: 60%;
     min-width: 320px;
     height: 40px;
     padding: 10px;
     margin: 0;
+    text-align: center;
 }
 
 .email-input-wrapper{
@@ -36,24 +39,35 @@
 .e-button{
     margin-left: 1rem;
     height: 40px;
-    background: #921324;
+    background: var(--main-color);
     width: 20%;
     min-width: 100px;
     text-align: center;
     font-size: 1.5rem;
     line-height: 40px;
     color: white;
+    border-radius: 20px;
 }
 
 .parag{
     width: 80%;
     text-align: center;
     margin-bottom: 1rem;
+    
 }
 
-p{
+.parag p{
     color: black;
     font-size: 20px;
+}
+
+#popup-close {
+    color: var(--main-color);
+    font-size: 30px;
+    margin-left: 88%;
+    margin-bottom: 25rem;
+    position: absolute;
+    cursor: pointer;
 }
 
 @media (width < 1200px) {

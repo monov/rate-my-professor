@@ -1,3 +1,8 @@
+:root{
+    --main-color: #AB162B;
+}
+
+
 .Home {
     background: white;
     width: 100%;
@@ -19,7 +24,7 @@
     background: linear-gradient(0deg, rgba(21, 21, 21, 0.7), rgba(21, 21, 21, 0.7)), url('./assets/imgs/man-reading-book.ec0041cf.jpeg');
     background-position: center;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 8px #1f1f1f;
 }
 
@@ -42,11 +47,10 @@ p{
 }
 
 .txt-wrapper {
-    background: transparent;
-    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.4);
     width: 100%;
     min-height: 140px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow:  0 0 8px #1f1f1f;
     display: flex;
     flex-direction: column;
@@ -63,7 +67,7 @@ p{
 }
   
 ::-webkit-scrollbar-thumb {
-    background: #921324;
+    background: var(--main-color);
     border-radius: 10px;
 }
   

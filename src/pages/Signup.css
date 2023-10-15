@@ -12,7 +12,7 @@
 
 .signup-page-wrapper{
     margin-top: 8rem;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 8px;
     width: 350px;
     height: 450px;
@@ -21,7 +21,7 @@
     border-radius: 10px;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(10px);
+    
 }
 
 .signup-reg{
@@ -34,7 +34,7 @@
 
 .s{
     background: white; 
-    border: none;
+    border: solid 2px var(--main-color);
     height: 60px;
     font-size: 1.25rem;
     width: 40%;
@@ -50,7 +50,7 @@
 }
 
 .s-button{
-    background: #921324;
+    background: var(--main-color);
     color: white;
     text-align: center;
     line-height: 60px;

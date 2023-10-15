@@ -19,7 +19,7 @@
 }
   
 .results-list::-webkit-scrollbar-thumb {
-    background: #AB162B;
+    background: var(--main-color);
     border-radius: 10px;
 }
 

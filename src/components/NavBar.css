@@ -10,16 +10,17 @@
     flex-shrink: 0;
 }
 
+
 .logo{
-    margin: 0 0 0 2rem;
-    background: url('../assets/imgs/logo.png') no-repeat;
-    cursor: pointer;
-    height: 50px;
-    width: 170px;
-    background-size: contain;
-    background-position: center;
+    font-size: 24px;
+    margin-left: 2rem;
     border-radius: 10px;
-    transition: .2s;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.color1{
+    text-decoration: none;
 }
 
 
@@ -40,7 +41,7 @@
     transition: .2s;
     text-decoration: none;
     color: white;
-    background: #AB162B;
+    background: var(--main-color);
     border-radius: 20px;
     margin-right: 2rem;
 }
@@ -56,11 +57,10 @@
     text-decoration: none;
     border-radius: 20px;
     margin-right: 1rem;
-    color: #AB162B;
+    color: var(--main-color);
 }
 
 .login:hover{
-    text-decoration: underline;
     box-shadow: 0 0 8px #1f1f1f;
 } 
 
